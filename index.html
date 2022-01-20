@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="./style.css" rel="stylesheet" />
+    <link href="./reset.css" rel="stylesheet" />
+    <title>CPS</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="keywords" content="важные, ключевые, слова" />
+    <meta name="description" content="краткое описание" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header-mobile">
+        <div class="flex-wrapper">
+          <div class="menu header-mobile__menu">
+            <button type="button" class="menu__btn btn" title="Меню">
+              <img
+                alt="button menu"
+                class="btn__img"
+                src="./img/icon_burger.svg"
+              />
+            </button>
+          </div>
+
+          <div class="logo header-mobile__logo">
+            <a href="#" class="logo__link link" title='Главная страница CPS'>
+              <img alt="CPS" class="logo__img" src="./img/logo.svg" />
+            </a>
+          </div>
+
+          <div class="header-mobile__connection-btn connection-btn">
+            <button type="button" href="#" class="connection-btn__btn btn" title="Заказать обратный звонок">
+              <img
+                alt="button call"
+                class="btn__img"
+                src="./img/icon_call.svg"
+              />
+            </button>
+            <button type="button" href="#" class="connection-btn__btn btn" title='Чат'>
+              <img
+                alt="button chat"
+                class="btn__img"
+                src="./img/icon_chat.svg"
+              />
+            </button>
+            <button type="button" href="#" class="connection-btn__btn btn"  title='Профиль'>
+              <img
+                alt="button profile"
+                class="btn__img"
+                src="./img/icon_profile.svg"
+              />
+            </button>
+          </div>
+
+          <div class="another-btn header-mobile__btn">
+            <button type="button" href="#" class="another-btn__btn btn" title='Оставить заявку'>
+              <img
+                alt="button repair"
+                class="btn__img"
+                src="./img/icon_repair.svg"
+              />
+            </button>
+            <button type="button" href="#" class="another-btn__btn btn" title="Статус ремонта">
+              <img
+                alt="button check status"
+                class="btn__img"
+                src="./img/icon_checkstatus.svg"
+              />
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <header class='header-desktop'>
+        <div class='flex-wrapper'>
+
+            <div class="header-desktop__title title">
+              <h1 class="title__text">Услуги и сервисы</h1>
+            </div>
+
+            <div class="header-desktop__another-btn another-btn">
+              
+              <div class='another-btn__btn'>
+                <p class='btn__text'>Оставить заявку</p>
+                <button type="button" href="#" class="btn__img btn" title='Оставить заявку'>
+                  
+                  <img
+                    alt="button repair"
+                    class="btn__img"
+                    src="./img/icon_repair.svg"
+                  />
+                </button>
+              </div>
+              <div class='another-btn__btn'>
+                <p class='btn__text'>Статус ремонта</p>
+                <button type="button" href="#" class="btn__img btn" title="Статус ремонта">
+                  
+                  <img
+                    alt="button call"
+                    class="btn__img"
+                    src="./img/icon_call.svg"
+                  />
+                </button>
+              </div>
+            </div>
+      </header>
+
+      <main class="content">
+        <div class="main__upper-menu upper-menu">
+          <div class="upper-menu__title">
+            <h1 class="title__text">Услуги и сервисы</h1>
+          </div>
+
+          <ul class="upper-menu__menu menu">
+            <li class="menu__item menu__item--active">
+              <a href="#" class="menu__link" title='Ремонтируемые бренды'>Ремонтируемые бренды</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link" title="Ремонтируемые устройства">Ремонтируемые устройства</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link" title="Цены на услуги">Цены на услуги</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link" title='Адреса сервисных центров'>Адреса сервисных центров</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link" title='Специальные цены'>Специальные цены</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link" title='Отзывы'>Отзывы</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main__information information">
+          <div class="information__block">
+            <div class='information__description'>
+              <p class="information__text text">
+                Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                </p>
+                <p class="information__text text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                </p>
+              </p>
+            </div>
+            <div class="information__read-more read-more">
+              <button type="button" class="read-more__btn" title='Читать далее'>
+                <img src='./img/icon_read_more.svg' alt=''>
+                <p>Читать далее</p>
+              </button>
+            </div>
+          </div>
+          <img src="./img/photo.png" alt="CPS" class="information__photo" />
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
+
+
+<!-- по коду
++ button и (+) a должны иметь свой title атрибут, button нужен только в тех местах когда текста нет (???????), а есть иконка
++ читать далее нужно просто обернуть в button и положить туда img
++ не нужно создавать класс с названием body можно назвать его wrapper
++ лучше не создавать тег section там где должен быть main, и у этого main тэга можно поставить класс content
+зачем отдельные классы такие как title или main они все равно не используемы в верстке (но они нужны для выделения нового блока __ дробление блока с элементом)
+
+по верстке
++ кнопки с иконками и текст должны быть с курсором
++ навигационная панель должна быть со стилями как и выбранная  при наведении и на фокусе -->

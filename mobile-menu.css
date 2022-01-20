@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "TT Lakes";
+  src: url("fonts/TTLakes-Regular.woff") format("woff");
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  src: url("fonts/TTLakes-Medium.woff") format("woff");
+  font-weight: 500;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  src: url("fonts/TTLakes-Bold.woff") format("woff");
+  font-weight: 700;
+  font-stretch: normal;
+}
+
+a {
+  color: #1b1c21;
+  font-weight: 500;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 320px;
+  min-height: 100%;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2);
+}
+
+.link {
+  transition-duration: 500ms;
+}
+
+.link__active,
+.link:hover {
+  color: #7e7e82;
+}
+
+.flex-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header__btn:first-child {
+  margin-right: 15px;
+}
+
+.header__btn:last-child {
+  margin-left: auto;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  transition-duration: 500ms;
+}
+
+.btn:hover {
+  opacity: 0.7;
+  transform: scale(1.2);
+}
+
+.nav__menu {
+  margin-top: 45px;
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.menu__item__active {
+  position: relative;
+}
+
+.menu__item:before {
+  display: block;
+  content: "";
+
+  height: 0;
+  width: 0;
+  background-color: #41f6d7;
+  border-radius: 20px;
+
+  position: absolute;
+  left: -20px;
+
+  transition-duration: 500ms;
+}
+
+.menu__item__active:before,
+.menu__item:hover:before {
+  display: block;
+  content: "";
+
+  height: 32px;
+  width: 4px;
+  background-color: #41f6d7;
+  border-radius: 20px;
+
+  position: absolute;
+  left: -20px;
+}
+
+.menu__item:not(:last-child) {
+  margin-bottom: 35px;
+}
+.footer {
+  margin-top: auto;
+}
+
+.footer__connection-btn {
+  display: flex;
+  margin-bottom: 15px;
+}
+.footer__btn:not(:last-child) {
+  margin-right: 15px;
+}
+.footer__contact {
+  margin-bottom: 40px;
+}
+
+.contact__phone {
+  margin-top: 12px;
+}
+
+.phone {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+}
+
+.footer__list-lang {
+  display: flex;
+}
+
+.list-lang__link:not(:last-child) {
+  margin-right: 10px;
+}
