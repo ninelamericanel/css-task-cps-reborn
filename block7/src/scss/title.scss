@@ -1,0 +1,40 @@
+@import 'variable';
+
+.title {
+  position: relative;
+
+  .title__text {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+.title:before {
+  display: block;
+  content: "";
+
+  width: 4px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: $borderLeftBlock;
+  position: absolute;
+}
+
+@media screen and (max-width: 767px) {
+ .title:before {
+   left: -16px;
+ }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .title:before {
+    left: -24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .title:before {
+    left: -30px;
+  }
+}

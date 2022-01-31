@@ -1,0 +1,55 @@
+@import 'header', 'reset', 'main-content', 'variable', 'headline', 'brand', 'equipment',
+'price-block', 'wrappers', 'link', 'title', 'popup-feedback', 'popup', 'form', 'popup-menu', 'footer', 'connection', 'swiper', 'buttons', 'price', 'repair', 'table';
+
+@font-face {
+  font-family: "TT Lakes";
+  src: url("../fonts/TTLakes-Regular.woff") format("woff");
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  src: url("../fonts/TTLakes-Medium.woff") format("woff");
+  font-weight: 500;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  src: url("../fonts/TTLakes-Bold.woff") format("woff");
+  font-weight: 700;
+  font-stretch: normal;
+}
+
+body {
+  font-family: "TT Lakes", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $mainTextColor;
+  //background-color: #f8f8f8;
+}
+
+
+@media screen and (max-width: 1439px) {
+  .left-side {
+    display: none;
+  }
+  .right-side {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .flex-wrapper {
+    align-items: normal;
+  }
+  .left-side {
+    width: 22%;
+  }
+  .right-side {
+    width: 78%;
+  }
+}
+

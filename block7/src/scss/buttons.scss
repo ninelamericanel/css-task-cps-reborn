@@ -1,0 +1,56 @@
+@import 'variable';
+
+.btn {
+  background-color: inherit;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+
+  transition-duration: 500ms;
+}
+
+.btn:hover {
+  opacity: 0.7;
+  transform: scale(1.2);
+}
+
+
+.btn-long {
+  display: flex;
+  padding: 4px 12px;
+  width: 119px;
+  height: 32px;
+  border-radius: 50px;
+  background-color: $bgLongBtn;
+  .btn-long__text {
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    color: $bgHeadlineColor;
+  }
+  .btn-long__img {
+    margin-left: auto;
+  }
+}
+
+
+
+.text-btn {
+  display: flex;
+  align-items: center;
+  background-color: inherit;
+
+  p {
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: $mainTextColor;
+  }
+}
+
+
+.hide {
+  display: none;
+}

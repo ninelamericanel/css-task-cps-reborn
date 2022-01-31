@@ -1,0 +1,32 @@
+@import 'variable';
+
+.headline {
+  background-color: $bgHeadlineColor;
+  border-top: 1px solid $borderTopBlock;
+
+  .headline__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $titleColor;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .headline {
+    padding: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .headline {
+    padding: 16px 24px;
+  }
+}
+
+@media screen and  (min-width: 1440px) {
+  .headline {
+    padding: 16px 30px;
+  }
+}
+

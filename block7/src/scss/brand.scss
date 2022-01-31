@@ -1,0 +1,38 @@
+.brand {
+
+  display: flex;
+  align-items: center;
+
+  height: 72px;
+  padding: 16px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+
+  .brand__btn {
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .brand {
+    min-width: 220px;
+    max-width: 600px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+  .brand {
+    width: 224px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .brand {
+    width: 240px;
+  }
+
+}
+

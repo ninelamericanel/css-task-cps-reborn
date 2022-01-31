@@ -1,0 +1,52 @@
+@import 'variable';
+
+.price-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  padding: 16px;
+  box-sizing: border-box;
+  background-color: $bgHeadlineColor;
+  border-radius: 6px;
+
+  .price__content {
+    p {
+      font-size: 14px;
+    }
+
+    .price__title {
+      line-height: 16px;
+      color: $titleColor;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+    .price__description {
+      line-height: 18px;
+      font-weight: 400;
+    }
+  }
+
+  .price__btn {
+    margin-left: auto;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .price {
+    .wrapper {
+      padding-top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .price-block {
+    min-width: 260px;
+    max-width: 600px;
+  }
+}
+
+
+

@@ -1,0 +1,51 @@
+@import "variable";
+
+.wrapper {
+  background-color: $bgMainColor;
+}
+
+
+@media screen and  (max-width: 767px){
+  .wrapper {
+    padding: $padding320px;
+  }
+}
+
+@media screen and  (min-width: 768px) and (max-width: 1439px){
+  .wrapper {
+    padding: $padding768px;
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .wrapper {
+    padding: $padding1440px;
+  }
+}
+
+
+.block-mobile {
+  overflow: hidden;
+  padding: 16px 0 24px 16px;
+  background-color: $bgMainColor;
+}
+
+
+.flex-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .block {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .block-mobile {
+    display: none;
+  }
+}

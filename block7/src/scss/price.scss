@@ -1,0 +1,48 @@
+@import "variable";
+
+.price {
+  .price__block {
+
+    .price__table {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+
+    .price__additional {
+      .price__additional-description {
+        font-size: 14px;
+        line-height: 20px;
+
+      }
+    }
+  }
+
+  .table__btn {
+    margin-left: auto;
+  }
+
+  .price__text-btn {
+    margin-top: 16px;
+    padding-right: 5px;
+    text-align: start;
+    .text-btn__text {
+      margin-left: 0;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+  }
+
+}
+
+
+@media screen and (min-width: 1120px) {
+  .price__block {
+
+    .price__table {
+      margin-bottom: 32px;
+    }
+
+  }
+}

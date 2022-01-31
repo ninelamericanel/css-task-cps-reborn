@@ -1,0 +1,55 @@
+@import "variable";
+.table {
+  font-size: 14px;
+  .table__head {
+    background-color: $bgMainColor;
+    border-left: 16px solid $bgMainColor;
+    border-right: 16px solid $bgMainColor;
+
+    .table__row {
+      .table__title {
+        line-height: 16px;
+        color: $titleColor;
+        font-weight: 500;
+        text-align: start;
+        padding-bottom: 16px;
+      }
+    }
+  }
+  .table__body {
+    background-color: #FFFFFF;
+    border-left: 16px solid #FFFFFF;
+    border-right: 16px solid #FFFFFF;
+
+
+
+    .table__row {
+      .table__description {
+        line-height: 18px;
+        font-weight: 400;
+        padding: 23px 0;
+      }
+      .table__btn {
+        
+      }
+    }
+    .table__row:not(:last-child) {
+      border-bottom: 1px solid $borderBottomTable;
+    }
+  }
+
+}
+
+@media screen and (min-width: 1120px) {
+  .table {
+    .table__body {
+      border-left: 24px solid #FFFFFF;
+      border-right: 24px solid #FFFFFF;
+    }
+    .table__head {
+      border-left: 24px solid $bgMainColor;
+      border-right: 24px solid $bgMainColor;
+    }
+  }
+}
+

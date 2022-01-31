@@ -1,0 +1,122 @@
+@import 'variable';
+
+.main-content {
+
+  .main-content__wrapper-submenu {
+    margin-bottom: 24px;
+  }
+
+  .main-content__title {
+    margin-bottom: 24px;
+  }
+
+  .main-content__submenu {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+
+    .main-content__item {
+      padding: 10px 15px;
+      margin-bottom: 8px;
+      transition-duration: 500ms;
+
+      background-color: inherit;
+
+      border: 2px solid inherit;
+      border-radius: 5px;
+
+      .main-content__link {
+        overflow-x: scroll;
+        width: auto;
+        white-space: nowrap;
+      }
+    }
+
+    .main-content__item:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    .main-content__item--active,
+    .main-content__item:focus,
+    .main-content__item:hover {
+      background-color: $bgHeadlineColor;
+
+      border: 2px solid $borderBlock;
+      border-radius: 5px;
+    }
+  }
+
+  .main-content__submenu::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  .main-content__information {
+
+    .information__block {
+      margin-bottom: 16px;
+      .main-content__description {
+        text-overflow: clip;
+        overflow: hidden;
+        margin-bottom: 16px;
+
+        .main-content__text {
+          font-size: 14px;
+          font-weight: 400;
+
+        }
+      }
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .main-content__description {
+    max-height: 90px;
+  }
+
+  .main-content__photo {
+    display: block;
+    margin: 0 auto;
+    max-width: 360px;
+    width: 100%;
+    text-align: center;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-content {
+    .main-content__submenu {
+      flex-wrap: wrap;
+    }
+    .main-content__information {
+      display: flex;
+      justify-content: space-between;
+      .information__block {
+        min-width: 312px;
+      }
+
+      .main-content__photo {
+        border-radius: 8px;
+      }
+  }
+
+}
+
+
+  .main-content__description {
+    max-height: 160px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main-content__title {
+    display: none;
+  }
+}
+
+

@@ -1,0 +1,11 @@
+@import "variable";
+
+.link__active,
+.link:hover {
+  color: #7e7e82;
+}
+
+.link {
+  color: $titleColor;
+  transition-duration: 500ms;
+}
