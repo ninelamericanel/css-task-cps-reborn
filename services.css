@@ -1,5 +1,4 @@
 @font-face {
-  /*dd*/
   font-family: "TT Lakes";
   src: url("fonts/TTLakes-Regular.woff") format("woff");
   font-weight: 400;
@@ -86,7 +85,7 @@
 .services__list{
   display: flex;
   flex-wrap: wrap;
-  /*justify-content: center;*/
+  justify-content: center;
 }
 
 .services-for-mobile__content, .services__item {
