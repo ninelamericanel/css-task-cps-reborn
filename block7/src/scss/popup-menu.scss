@@ -70,7 +70,8 @@
 
 
   .popup-menu__footer {
-    margin-top: 100%;
+    position: absolute;
+    bottom: 0;
 
     .popup-menu__connection-btn {
       margin-bottom: 15px;
